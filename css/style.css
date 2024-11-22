@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+main {
+  padding: 30px;
+  background-color: #f3f3f3;
+  position: relative;
+  display: flex;
+}
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #222222;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+h2 {
+  color: #fc200c;
+  font-size: 24px;
+  padding: 16px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logo img {
+  padding: 10px;
+}
+.menu a {
+  color: white;
+}
+#main.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#main.menu a {
+  padding-right: 16px;
+}
+#extra.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px;
+}
+#extra.menu a {
+  margin: 10px;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100vw;
+}
+.banner-img {
+  background-image: url("../img/delivery.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 64vh;
+}
+.banner-img,
+.banner-info {
+  position: relative;
+  width: 35vw;
+  border-radius: 16px;
+  padding: 30px 48px;
+  margin: 8px;
+}
+.banner-info {
+  background-color: white;
+}
+.banner-img h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner-info h2 {
+  text-align: center;
+}
+.banner-img span {
+  color: white;
+  font-size: inherit;
+}
+.banner-info img {
+  position: absolute;
+  right: 30px;
+  bottom: 8rem;
+}
+.banner-info h3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 16px;
+  font-size: 18px;
+}
+.banner-info ol {
+  padding: 16px;
+  font-size: 16px;
+}
+.banner-info ol li {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner-img,
+  .banner-info {
+    width: 100%;
+  }
+  .banner-img {
+    order: 1;
+  }
+  .banner-info {
+    order: 2;
+  }
+  .banner-info img {
+    margin-top: 15px;
+    bottom: 80px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .banner-info img {
+    position: static;
+    margin-left: 30%;
+  }
+}
